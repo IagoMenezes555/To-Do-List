@@ -11,8 +11,6 @@ function add(){
     const myJSONAQUI = (localStorage.getItem("Sibella"));
     
     if (myJSONAQUI == null){
-        alert("Ainda não tem tarefas salvas");
-
         const array = [objtarefa];
         localStorage.setItem("Sibella", JSON.stringify(array));
     } else{
